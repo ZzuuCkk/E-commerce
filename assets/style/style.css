@@ -1,4 +1,5 @@
 :root {
+    --bg:#FFFFFF;
     --dark: #1C1C1C;
     --gray: #505050;
     --grey-500: #8B96A5;
@@ -15,3 +16,9 @@
     --red:#FA3434;
 
   }
+
+/* #ship,option{
+    width: 90px;
+    height: 90px;
+  
+}  */
