@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/fonts.css">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
     <header>
         <div class="header_inner">
-            <div class="logo"></div>
+            <div class="logo">
+                <img src="./assets/img/web-main-logo.svg" alt="">
+            </div>
             <div class="search-bar">
-                <input type="text" name="search-bar" id="search-bar">
+                <input type="text" name="search-bar" id="search-bar" placeholder=" Search">
                 <select name="categories-select" id="categories-select">
-                    <option value="All categories">All categories</option>
+                    <option value="All categories">All category</option>
                     <option value="Automobiles">Automobiles</option>
                     <option value="Clothes and wear">Clothes and wear</option>
                     <option value="Home interiors">Home interiors</option>
@@ -24,7 +27,7 @@
                     <option value="Machineri tools">Machineri tools</option>
                     <option value="More category">More category</option>
                   </select>
-                  <button>Search</button>
+                  <button class="search">Search</button>
             </div>
             <div class="links">
                 <div class="link-icon">
@@ -47,49 +50,49 @@
         </div>
         <nav>
             <div class="nav-category">
-                <button>
-                    <img src="./assets/img/menu.svg" alt="menu"> All category
-                </button>
+                <div class="category-btn">
+                    <button class="nav-btn">
+                        <img src="./assets/img/menu.svg" alt="menu"></button>
+                    <p>
+                         All category
+                    </p>
+                </div>
                 <a href="#">Hot offers</a>
                 <a href="#">Gift boxes</a>
                 <a href="#">Projects</a>
                 <a href="#">Menu item</a>
-                <label for="help">Help</label>
-                    <select name="help" id="help">
-                        <option value="blank"></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
+                <div class="dropdown">
+                    <button class="help-btn">Help <img src="./assets/img/Arr_down.png" alt=""></button>
+                    <div class="dropdown-options">
+                      <a href="#">Dashboard</a>
+                      <a href="#">Setting</a>
+                      <a href="#">Logout</a>
+                    </div>
+                  </div>
             </div>
             <div class="lang-dest">
-                    <select name="valuts" id="valuts">
+                    <select name="valuts" id="lang-dest">
                         <option value="usd">English,USD</option>
                         <option value="saab">Saab</option>
                         <option value="mercedes">Mercedes</option>
                         <option value="audi">Audi</option>
                     </select>
-                <label for="ship">Ship to</label>
-                    <select name="ship" id="ship">
-                        <option value="AE"><img src="assets/img/AE.svg" alt="United Arab Emirates"></option>
-                        <option value="AU"><img src="assets/img/AU.png" alt="Australia"></option>
-                        <option value="CN"><img src="assets/img/CN.png" alt="China"></option>
-                        <option value="DE"><img src="assets/img/DE.png" alt="Germany"></option>
-                        <option value="DK"><img src="assets/img/DK.png" alt="Denmark"></option>
-                        <option value="FR"><img src="assets/img/FR.png" alt="france"></option>
-                        <option value="GB"><img src="./assets/img/GB.png" alt="Great britain"></option>
-                        <option value="IT"><img src="./assets/img/IT.png" alt="Italy"></option>
-                        <option value="RU"><img src="./assets/img/Fuck putin.png" alt="Russia"></option>
-                        <option value="US"><img src="./assets/img/US.png" alt="United States"></option>
-                        
-                    </select>
+                    <div class="ship">
+                        <p>Ship to</p>
+                        <button class="ship-toggle"><img src="./assets/img/Arr_down.png" alt=""></button>
+                        <div class="ship-menu">
+                          <ul id="country-list">
+                            <!-- Country links will be added dynamically here -->
+                          </ul>
+                        </div>
+                      </div>
                     
             </div>
         </nav>
     </header>
 
 
-
+<script src="./assets/js/app.js"></script>
 
 </body>
 </html>
