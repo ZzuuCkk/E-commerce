@@ -47,3 +47,34 @@ const countries = [
       flagContainer.querySelector('.flag-image').alt = flagImage.alt;
     }
   });
+
+
+
+
+  
+
+function countDownTime(){
+    const newDay = document.querySelector(".day");
+    const newHour = document.querySelector(".hour");
+    const newMin = document.querySelector(".min");
+    const newSec = document.querySelector(".sec");
+    let countDownDate = new Date("jul 28 , 2023 20:00:00").getTime();
+    let today = new Date().getTime();
+    let difference = countDownDate - today;
+    const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+    
+    const targetDay = Math.floor(difference / day);
+    const hours = Math.floor((difference % day) / hour);
+    const minutes = Math.floor((difference % hour) / minute);
+    const seconds = Math.floor((difference % minute) / second);
+    newDay.innerHTML = `${targetDay}`;
+    newHour.innerHTML = `${hours}`;
+    newMin.innerHTML = `${minutes}`;
+    newSec.innerHTML = `${seconds}`;
+    
+    }
+    setInterval(countDownTime,1000);
+    

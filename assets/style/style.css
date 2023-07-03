@@ -470,3 +470,126 @@ main{
   font-weight: 400;
   line-height: normal;
 }
+
+/* deals&offers section */
+.deals_offers{
+  max-width: 1440px;
+  width: 100%;
+
+}
+.deals-holder{
+  max-width: 1180px;
+  width: 100%;
+  height: 240px;
+  margin:0 auto;
+  padding: 0 0 0 20px;
+  border: 1px solid #DEE2E7;
+  display: flex;
+  align-items: center;
+}
+.calendar{
+  max-width: 281px;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #E0E0E0;
+
+
+}
+.calendar>h4{
+  color: var(--dark);
+  font-size: 20px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.calendar>p{
+  color: var(--gray-500);
+font-size: 16px;
+font-family: 'inter';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.date{
+  display: flex;
+  gap: 6px;
+}
+.black-box{
+  width: 45px;
+  height: 50px;
+  border-radius: 4px;
+  background:  #606060;
+  text-align: center;
+  margin-top: 18px;
+ 
+}
+.box-txt{
+  color: var(--bg);
+  padding-top: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.time{
+  color: var(--bg);
+  text-align: center;
+  font-size: 12px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.deals-components{
+  /* flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  max-width: 179px;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #E0E0E0;
+}
+.deals-components>img{
+  width: 140px;
+  height: 140px;
+  padding: 9.333px 19.289px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.deals-components-txt{
+  color: var(dark);
+  font-size: 16px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.dicount{
+  border-radius: 29px;
+  background-color: #FFE3E3;
+  width: 62px;
+  height: 28px;
+  padding: 6px 6px;
+  margin: 0 auto;
+  color: #EB001B;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
