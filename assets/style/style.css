@@ -417,6 +417,7 @@ main{
   font-size: 13px;
   font-family: 'inter';
   font-weight: 500;
+  cursor: url(../img/pointer.png),pointer;
 
 }
 .Log-in{
@@ -433,6 +434,7 @@ main{
   font-size: 13px;
   font-family: 'inter';
   font-weight: 500;
+  cursor: url(../img/pointer.png),pointer;
 }
 
 .orange{
