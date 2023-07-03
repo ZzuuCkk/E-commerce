@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+
+  cursor: url(../img/default.png),default;
+}
 a{
   text-decoration: none;
 }
@@ -26,6 +30,7 @@ ul,li {
     --light-orange:#FFE5BF;
     --orange:#FF9017;
     --red:#FA3434;
+    --primary-light:#E5F1FF;
 
   }
 
@@ -47,7 +52,12 @@ header{
   align-items: center;
 
 }
-
+.logo{
+  cursor: url(../img/pointer.png),pointer;
+}
+input{
+  cursor: url(../img/text.png),text;
+}
 .search-bar{
   width: 666px;
   display: flex;
@@ -68,7 +78,7 @@ header{
 #categories-select{
   width: 145px;
   border: none;
-  cursor: pointer;
+  cursor: url(../img/pointer.png),pointer;
 }
 
 .search{
@@ -76,9 +86,8 @@ header{
   background-color: var(--blue);
   color: var(--bg);
   border: none;
-  cursor: pointer;
+  cursor: url(../img/pointer.png),pointer;
 }
-
 .search:active{
   box-shadow: 1px 1px 3px 1px black;
   transform: translateX(1px);
@@ -90,11 +99,13 @@ header{
   justify-content: space-between;
   align-items: center;
   gap: 7px;
+  
 }
 .link-icon img{
   width: 20px;
   height: 20px;
   align-self: center;
+  cursor: url(../img/pointer.png),pointer;
 }
 .link-icon{
   display: flex;
@@ -105,11 +116,9 @@ header{
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
+  
 }
 
-.link-icon:hover{
-  box-shadow:  2px 2px gray;
-}
 
 nav{
   max-width: 1440px;
@@ -120,7 +129,7 @@ nav{
   align-items: center;
   justify-content: space-around;
   gap: 291px;
-  box-shadow: 0 0 1px 1px var(--gray);
+  box-shadow: 0 0 1px 1px #E0E0E0;
 }
 .category-btn{
   display: flex;
@@ -128,10 +137,12 @@ nav{
   align-items: center;
   justify-content: center;
   gap: 6px;
+  cursor: url(../img/pointer.png),pointer;
 }
 .nav-btn{
   background: none;
   border: none;
+  cursor: url(../img/pointer.png),pointer;
 }
 .nav-category{
   display: flex;
@@ -148,6 +159,7 @@ nav{
   font-weight: 500;
   line-height: 22px;
   color: var(--dark);
+  cursor: url(../img/pointer.png),pointer;
 }
 .dropdown {
   display: inline-block;
@@ -162,8 +174,16 @@ nav{
 
 .dropdown:hover .dropdown-options {
   display: block;
+  background-color: var(--bg);
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 2px var(--light-blue);
 }
+.dropdown a:hover{
 
+  color: red;
+
+}
 .help-btn{
   display: flex;
   justify-content: center;
@@ -187,6 +207,7 @@ nav{
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+  cursor: url(../img/pointer.png),pointer;
 }
 
 
@@ -204,8 +225,7 @@ nav{
   background-color: #fff;
   color: #000;
   border: none;
-  cursor: pointer;
-}
+  cursor: url(../img/pointer.png),pointer;}
 
 .ship-menu {
   position: absolute;
@@ -261,3 +281,192 @@ nav{
 
 
 /* main styles */
+
+main{
+  max-width: 1440px;
+  width: 100%;
+}
+.main-holder{
+  max-width: 1180px;
+  width: 100%;
+  margin: 20px auto ;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bg) ;
+  border: 1px solid #DEE2E7;
+  border-radius: 5px ;
+}
+.main-category{
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 373px;
+  height: 100%;
+}
+
+.main-category a{
+  padding: 6px 14px ;
+  color: var(--dark, #1C1C1C);
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: url(../img/pointer.png),pointer;
+}
+
+.main-category a:hover{
+  background-color: var(--primary-light);
+  border-radius: 8px;
+}
+
+.main-banner{
+  background:url(../img/Banner.png);
+  background-repeat: no-repeat;
+  max-width: 664px;
+  width: 100%;
+  min-height: 373px;
+  height: 100%;
+  padding: 56px 0 0 44px;
+}
+
+.main-banner>p{
+  color: var(--base-color-dark, #1C1C1C);
+  font-size: 28px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: url(../img/text.png),text;
+}
+.main-banner>h1{
+  color: var(--base-color-dark, #1C1C1C);
+  font-size: 32px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: url(../img/text.png),text;
+}
+
+.main-btn{
+  height: 40px;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--dark, #1C1C1C);
+  text-align: center;
+  font-size: 16px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 17px;
+  cursor: url(../img/pointer.png),pointer;
+}
+
+.main-offer{
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  width: 100%;
+  padding:0 0 0 19px;
+}
+
+.user-offer{
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  width: 100%;
+  background-color: var(--light-blue);
+  border-radius: 6px;
+  /* margin: auto;    */
+}
+
+.user{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 14px auto;
+  gap: 9px;
+}
+
+.user>p{
+  color: var(--dark, #1C1C1C);
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.join{
+  margin: auto;
+  width: 180px;
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--blue);
+  color: var(--bg);
+  text-align: center;
+  font-size: 13px;
+  font-family: 'inter';
+  font-weight: 500;
+
+}
+.Log-in{
+  margin: 7px  auto 12px;
+  width: 180px;
+  height: 30px;
+  padding: 0px 10px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--grey-300);
+  color: var(--blue);
+  text-align: center;
+  font-size: 13px;
+  font-family: 'inter';
+  font-weight: 500;
+}
+
+.orange{
+  background-color: #F38332;
+  border-radius: 6px;
+  max-width: 200px;
+  width: 100%;
+  height: 95px;
+  margin-top: 10px;
+  padding: 16px 40px 22px 16px;
+}
+.orange>p{
+  color: var(--bg);
+  font-size: 16px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.quotes{
+  background-color: #55BDC3;
+  border-radius: 6px;
+  max-width: 200px;
+  width: 100%;
+  height: 95px;
+  margin-top: 10px;
+  padding: 16px 40px 22px 16px;
+}
+
+.quotes>p{
+  color: var(--bg);
+  font-size: 16px;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
