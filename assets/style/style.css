@@ -595,3 +595,124 @@ line-height: normal;
   line-height: normal;
   letter-spacing: -0.2px;
 }
+
+/* sale components */
+.sale-components{
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 20px;
+}
+.sale-components-holder{
+  max-width: 1180px;
+  width: 100%;
+  height: 257px;
+  margin:0 auto;
+  border: 1px solid #DEE2E7;
+  display: flex;
+  align-items: center;
+}
+
+.sale-components-title{
+  max-width: 388px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  position: relative;
+}
+.sale-components-title>img{
+  max-width: 388px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  object-fit: cover;
+}
+.title-holder{
+  width: 154px;
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title-holder>h4{
+  color: var(--dark);
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  cursor: url(../img/text.png),text;
+}
+
+.sale-btn{
+  width: 100%;
+  border-radius: 6px;
+  background-color: var(--bg);
+  height: 40px;
+  padding: 0px 16px;
+  border-radius: 6px;
+  border: 1px solid  #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+  cursor: url(../img/pointer.png),pointer;
+}
+.sale-btn:active{
+  transform: translateY(1px);
+  background-color: var(--light-blue);
+}
+
+.sale-items{
+  max-width: 792px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #DEE2E7;
+  
+}
+.sale-card{
+  max-width: 197px;
+  width: 100%;
+  height: 127px;
+  position: relative;
+  border-bottom: 1px solid #DEE2E7;
+  border-right: 1px solid #DEE2E7;
+  cursor: url(../img/pointer.png),pointer;
+  
+}
+
+.sale-card>img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.sale-card-txt{
+  position: absolute;
+  left: 16px;
+  top: 20px;
+}
+
+.sale-txt{
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sale-price{
+  color: var(--gray-500);
+  font-size: 13px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-overflow: ellipsis; /* enables ellipsis */
+  white-space: nowrap; /* keeps the text in a single line */
+  width: 50px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+}
