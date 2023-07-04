@@ -77,4 +77,8 @@ function countDownTime(){
     
     }
     setInterval(countDownTime,1000);
-    
+    let textarea = document.querySelector('.txtarea');
+    textarea.addEventListener('input', function() {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    });
