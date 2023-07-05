@@ -866,3 +866,63 @@ select#quantity{
    font-weight: 500;
 }
 
+/* recommended items */
+.recommended-items{
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 15px;
+}
+.recommended-items>h3{
+  color: var(--dark);
+  font-size: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  padding-left: 120px;
+  }
+.recommended{
+  max-width: 1180px;
+  width: 100%;
+  margin: 27.35px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.recommended-card{
+  max-width: 211px;
+  width: 100%;
+  min-height: 310px;
+  height: 100%;
+  border: 1px solid var(--grey-300);
+}
+.recommended-card>img{
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding: 14.222px 24.889px 15.111px 24.889px;
+}
+.recommended-txt{
+  padding-left: 16.01px;
+  padding-bottom:8.86px;
+}
+
+.recommended-txt:first-child{
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.recommended-txt:nth-child(2){
+  color: var(--grey-500);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
