@@ -997,3 +997,60 @@ select#quantity{
   font-weight: 500;
   line-height: 22px;
 }
+
+/* suppliers section */
+.suppliers{
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 30px;
+}
+.suppliers>h3{
+  color: var(--dark);
+  font-size: 24px;
+  font-family: 'Inter';
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  padding-left: 120px;
+}
+.suppliers-holder{
+  max-width: 1180px;
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.region{
+  max-width: 221px;
+  width: 100%;
+  max-height: 36px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap:11px;
+}
+.region>img{
+  width: 28px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.region-txt>p{
+  color: var(--dark);
+font-size: 16px;
+font-family: 'Inter';
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.2px;
+}
+.region-txt>a{
+  color: var(--grey-500);
+font-size: 13px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
