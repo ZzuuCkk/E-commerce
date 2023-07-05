@@ -1054,6 +1054,7 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+cursor: url(../img/pointer.png),pointer;
 }
 
 /* subscribe */
@@ -1132,4 +1133,125 @@ line-height: normal;
   font-family: 'Inter';
   font-weight: 500;
   cursor: url(../img/pointer.png),pointer;
+}
+
+/* footer styles */
+footer{
+  max-width: 1440px;
+  width: 100%;
+
+}
+.footer-div{
+  max-width: 1180px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 61px;
+
+}
+
+.social{
+  max-width: 276px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 59px;
+}
+.social-img{
+  width: 126px;
+  height: 44px;
+  object-fit: contain;
+}
+.social>p{
+  color:#505050;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+.social-icons-img{
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  cursor: url(../img/pointer.png),pointer;
+
+  
+}
+.footer-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer-card>p{
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.footer-card>a{
+  color: var(--grey-500);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.copyright{
+  width: 100%;
+  height: 68px;
+  border-top: 1px solid var(--gray-300, #DEE2E7);
+  background: var(--gray-200, #EFF2F4);
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding-left: 128px;
+  gap: 749px;
+}
+
+
+
+.language-switcher{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#language-select{
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  padding-right: 20px;
+  cursor: url(../img/pointer.png),pointer;
+
+}
+
+#selected-flag {
+  width: 24px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.select-arrow {
+  position: absolute;
+  top: calc(50% - 12px); 
+  right: 5px; 
+  width: 24px;
+  height: 24px;
+  /* pointer-events: none;  */
 }

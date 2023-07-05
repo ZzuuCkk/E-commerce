@@ -13,6 +13,7 @@ const countries = [
   
   const countryList = document.getElementById('country-list');
   
+  
   countries.forEach(country => {
     const countryItem = `
       <li>
@@ -82,3 +83,24 @@ function countDownTime(){
       textarea.style.height = 'auto';
       textarea.style.height = textarea.scrollHeight + 'px';
     });
+
+    window.addEventListener('DOMContentLoaded', function() {
+      let dropdown = document.getElementById('language-select');
+      let selectedFlag = document.getElementById('selected-flag');
+      
+      let selectedOption = dropdown.options[dropdown.selectedIndex];
+      let flag = selectedOption.getAttribute('data-flag');
+      
+      selectedFlag.style.backgroundImage = 'url("' + flag + '")';
+    });
+    
+    function updateSelected() {
+      let dropdown = document.getElementById('language-select');
+      let selectedFlag = document.getElementById('selected-flag');
+      
+      let selectedOption = dropdown.options[dropdown.selectedIndex];
+      let flag = selectedOption.getAttribute('data-flag');
+      
+      selectedFlag.style.backgroundImage = 'url("' + flag + '")';
+    }
+    
