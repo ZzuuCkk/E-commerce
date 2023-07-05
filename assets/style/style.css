@@ -926,3 +926,74 @@ select#quantity{
   line-height: 24px;
   letter-spacing: -0.2px;
 }
+
+/* extra services section */
+.extra{
+  max-width: 1440px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.extra>h3{
+  color: var(--dark);
+  font-size: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  padding-left: 120px;
+}
+.extra-holder{
+  max-width: 1180px;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.extra-card{
+  max-width: 270px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  border: 1px solid var(--grey-300);
+  position: relative;
+
+}
+.extra-img{
+  max-width: 270px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  object-fit: contain;
+}
+.circle{
+  position: absolute;
+  bottom: 53px;
+  right: 21px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #D1E7FF;
+  z-index: 1;
+}
+
+.extra-icon{
+  position: absolute;
+  bottom: 68px;
+  right: 36px;
+  z-index: 2;
+}
+.extra-txt{
+  max-width: 175px;
+  width: 100%;
+  margin: 20px 0 20px 20px;
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 500;
+  line-height: 22px;
+}
