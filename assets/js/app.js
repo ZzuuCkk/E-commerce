@@ -104,3 +104,4 @@ function countDownTime(){
       selectedFlag.style.backgroundImage = 'url("' + flag + '")';
     }
     
+
