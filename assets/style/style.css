@@ -684,10 +684,17 @@ line-height: normal;
   border-radius: 6px;
   background-color: var(--bg);
   height: 40px;
-  padding: 0px 16px;
+  padding: 8px 16px;
   border-radius: 6px;
   border: 1px solid  #FFF;
   box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
+  color: var(--dark);
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   cursor: url(../img/pointer.png),pointer;
 }
 .sale-btn:active{
@@ -1097,7 +1104,7 @@ cursor: url(../img/pointer.png),pointer;
   min-height: 190px;
   height: 100%;
   background: var(--grey-200);
-  margin: 38px auto;
+  margin: 0 0 38px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1587,12 +1594,11 @@ line-height: normal;
   width: 100%;
   border-radius: 6px;
   background-color: var(--bg);
-  height: 40px;
-  padding: 0px 16px;
   border-radius: 6px;
   border: 1px solid  #FFF;
   box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
   cursor: url(../img/pointer.png),pointer;
+  
 }
 .sale-btn:active{
   transform: translateY(1px);
@@ -1939,8 +1945,6 @@ label[for=Verified]{
 .list-card-holder{
   max-width: 920px;
   width: 100%;
-  max-height: 230px;
-  height: 100%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(1 1fr);
@@ -1950,7 +1954,6 @@ label[for=Verified]{
 
 }
 
-
  
 .list-card{
   position: relative;
@@ -1959,7 +1962,6 @@ label[for=Verified]{
   background-color: #fff;
   border:1px solid #E0E0E0;
   display: flex;
-  justify-content:center;
   margin-bottom: 10px;
   
 }
@@ -2100,10 +2102,50 @@ label[for=Verified]{
   padding: 8px;
   background: transparent;
   border-radius: 6px;
-  border: 1px solid var(--gray-300, #DEE2E7);
+  border: 1px solid var(--gray-300);
   background: var(--white, #FFF);
   box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);
   cursor: url(../img/pointer.png),pointer;
 
 } 
 
+.page-switch{
+  display: flex;
+  gap: 9px;
+  justify-content: end;
+  padding: 20px;
+}
+#page-select{
+  width: 125px;
+  height: 40px; 
+  color: var(--dark);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: 1px solid #F7FAFC;
+}
+.page-num{
+  display: flex;
+  align-items: center;
+}
+.page{
+  width: 44px;
+  height: 40px;
+  border: 1px solid #F7FAFC;
+  text-align: center;
+  padding-top: 10px;
+  color: var(--dark);
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.page:active{
+  background-color: #606060;
+}
