@@ -116,64 +116,147 @@
         <section class="item-filter">
             <aside>
                 <div class="filter-card">
-                    <h6>Category</h6>
-                    <p>Mobile accessory</p>
-                    <p>Electronics</p>
-                    <p>Smartphones </p>
-                    <p>Modern tech</p>
+                    <div class="filter-card-title">
+                        <h6>Category</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
+                    <p class="filter-txt">Mobile accessory</p>
+                    <p class="filter-txt">Electronics</p>
+                    <p class="filter-txt">Smartphones </p>
+                    <p class="filter-txt">Modern tech</p>
                     <button class="filter-card-btn">See all</button>
                 </div>
                 <div class="filter-card">
-                    <h6>Brands</h6>
+                    <div class="filter-card-title">
+                        <h6>Brands</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Samsung" name="Samsung" >
-                        <label for="Samsung">Samsung</label>
+                        <label for="Samsung" class="filter-txt">Samsung</label>
                     </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Apple" name="Apple" >
-                        <label for="Apple">Apple</label>
+                        <label for="Apple" class="filter-txt">Apple</label>
                     </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Huawei" name="Huawei" >
-                        <label for="Huawei">Huawei</label>
+                        <label for="Huawei" class="filter-txt">Huawei</label>
                     </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Pocco" name="Pocco" >
-                        <label for="Pocco">Pocco</label>
+                        <label for="Pocco" class="filter-txt">Pocco</label>
                     </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Lenovo" name="Lenovo" >
-                        <label for="Lenovo">Lenovo</label>
+                        <label for="Lenovo" class="filter-txt">Lenovo</label>
                     </div>
                     <button class="filter-card-btn">See all</button>
                 </div>
                 <div class="filter-card">
-                    <h6>Features</h6>
+                    <div class="filter-card-title">
+                        <h6>Features</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Metallic" name="Metallic" >
                         <label for="Metallic">Metallic</label>
                     </div>
-                    <h6>Features</h6>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Plastic" name="Plastic" >
-                        <label for="Plastic">Plastic cover</label>
+                        <label for="Plastic" class="filter-txt">Plastic cover</label>
                     </div>
-                    <h6>Features</h6>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Ram" name="Ram" >
-                        <label for="Ram">8GB Ram </label>
+                        <label for="Ram" class="filter-txt">8GB Ram </label>
                     </div>
-                    <h6>Features</h6>
                     <div class="checkbox-row">
                         <input type="checkbox" id="power" name="power" >
-                        <label for="power">Super power</label>
+                        <label for="power" class="filter-txt">Super power</label>
                     </div>
-                    <h6>Features</h6>
                     <div class="checkbox-row">
                         <input type="checkbox" id="Memory" name="Memory" >
-                        <label for="Memory">Large Memory</label>
+                        <label for="Memory" class="filter-txt">Large Memory</label>
                     </div>
                     <button class="filter-card-btn">See all</button>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-card-title">
+                        <h6>Price range</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
+                    <div class="slider-div">                  
+                            <div class="price-input">
+                                <div class="field-holder">
+                                    <div class="field">
+                                        <span>Min</span>
+                                            <input type="number" class="input-min" value="2500">
+                                    </div>
+                                        <div class="field">
+                                                <span>Max</span>
+                                                <input type="number" class="input-max" value="7500">
+                                        </div>
+                                </div>
+      
+                                    <button class="range-btn">Apply</button>
+                            </div>
+                           <div >
+                               <div class="slider">
+                                   <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="999999" value="0" step="1">
+                                    <input type="range" class="range-max" min="0" max="999999" value="999999" step="1">               
+                                </div>
+                            </div> 
+                        </div>
+                </div>
+                
+                <div class="filter-card">
+                    <div class="filter-card-title">
+                        <h6>Condition</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="radio" id="Any" name="Any" value="Any" checked>
+                                <label for="html" class="filter-txt">Any</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="radio" id="Refurbished" name="Refurbished" value="Refurbished" >
+                                <label for="Refurbished"  class="filter-txt">Refurbished</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="radio" id="Brand" name="Brand" value="Brand new" >
+                                <label for="Brand new"  class="filter-txt">Brand new</label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="radio" id="Old" name="Old" value="Old">
+                                <label for="Old items"  class="filter-txt">Old items</label>
+                    </div>
+
+                </div>
+                <div class="filter-card">
+                    <div class="filter-card-title">
+                        <h6>Ratings</h6>
+                        <img src="./assets/img/expand_less.svg" alt="expand less arrow">
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="fivestar" name="fivestar" >
+                        <label for="fivestar" ><img src="./assets/img/5.svg" alt="fivestar"></label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="fourestar" name="fourestar" >
+                        <label for="fourestar" ><img src="./assets/img/4.svg" alt="fourestar"></label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="fourestar" name="fourestar" >
+                        <label for="fourestar" ><img src="./assets/img/3.svg" alt="fourestar"></label>
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="fourestar" name="fourestar" >
+                        <label for="fourestar" ><img src="./assets/img/2.svg" alt="fourestar"></label>
+                    </div>
+
                 </div>
             </aside>
             <div class="list">
@@ -398,11 +481,47 @@
                             </button>
                         </div>
                     </div>
+                    
+    <div class="page-switch">
+        <div>
+            <select name="categories-select" id="categories-select">
+                    <option value="All categories">All category</option>
+                    <option value="Automobiles">Automobiles</option>
+                    <option value="Clothes and wear">Clothes and wear</option>
+                    <option value="Home interiors">Home interiors</option>
+                    <option value="Computer and tech">Computer and tech</option>
+                    <option value="Tools & equipments">Tools , equipments</option>
+                    <option value="Sports and outdoor">Sports and outdoor</option>
+                    <option value="Animal and pets">Animal and pets</option>
+                    <option value="Machineri tools">Machinery tools</option>
+                    <option value="More category">More category</option>
+                  </select>
+        </div>
+        <div class="page-num">
+            <div class="page">
+                <img src="./assets/img/arrowright.svg" alt="">
+            </div>
+            <div class="page">
+                <p>1</p>
+            </div>
+            <div class="page">
+                <p>2</p>
+            </div>
+            <div class="page">
+                <p>3</p>
+            </div>
+            <div class="page">
+                <img src="./assets/img/arrowright.svg" alt="">
+            </div>
+        </div>
+    </div>
                 </div>
                 
             </div>
 
         </section>
+
+
     </main>
     <script src="./assets/js/item.js"></script>
 
