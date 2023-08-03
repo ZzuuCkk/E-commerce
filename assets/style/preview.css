@@ -1206,7 +1206,7 @@ nav{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 10px;
+  padding: 0;
   background: #FFF;
   border: none;
   border-radius: 6px;
@@ -1519,7 +1519,7 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 0px;
 
 }
 
@@ -1570,6 +1570,7 @@ footer{
 
 
 .copyright{
+  max-width: 375px;
   width: 100%;
   height: 68px;
   border-top: 1px solid var(--gray-300, #DEE2E7);
@@ -1616,13 +1617,5 @@ footer{
   width: 24px;
   height: 24px;
 }
-
-/* second page responsive */
-.item-page{
-  max-width: 375px;
-  width: 100%;
-  background-color:#F7FAFC;
-
 }
 
-}

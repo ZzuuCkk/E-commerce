@@ -13,9 +13,13 @@
     <header>
         <div class="header_inner">
             <div class="logo">
+                <a href="./item.html" class="shop-cart-btn">
+                    <img src="./assets/img/arrow_back.svg" alt="arr">
+                    <span>Shopping cart</span>
+                </a>
                 <a href="./index.html" class="mob-btn">
                     <img src="./assets/img/menu.svg" alt="menu"></a>
-                    <a href="./index.html"> <img src="./assets/img/web-main-logo.svg" alt=""></a>
+                    <a href="./index.html" class="main-logo"> <img src="./assets/img/web-main-logo.svg" alt=""></a>
             </div>
             <div class="links">
                 <div class="link-icon">
@@ -75,6 +79,14 @@
                         </div>
                     </div>
                 </div> 
+                <div class="counter-for-mob">
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <p class="counter-for-mob-price">$78.99</p>
+                </div>
                 <div class="border"></div>
                 <div class="cart-item-info">
                     <div class="cart-img">
@@ -104,7 +116,15 @@
                     </div>
                 </div> 
 
-
+ 
+                <div class="counter-for-mob">
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <p class="counter-for-mob-price">$78.99</p>
+                </div>
                 <div class="border"></div>
                 <div class="cart-item-info">
                     <div class="cart-img">
@@ -133,6 +153,15 @@
                         </div>
                     </div>
                 </div> 
+                 
+                <div class="counter-for-mob">
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                    <p class="counter-for-mob-price">$78.99</p>
+                </div>
                 <div class="border"></div>
                 <div class="back-btns">
                     <button class="back">
@@ -224,10 +253,15 @@
                 <div class="later-card-txt">
                     <h5>$99.50</h5>
                     <p>GoPro HERO6 4K Action Camera - Black</p>
-                    <button class="later-btn">
-                        <img src="./assets/img/shopping_cart.svg" alt="cart">
-                        <span>Move to cart</span>
-                    </button>
+                    <div class="later-for-mob">
+                        <button class="later-btn">
+                            <img src="./assets/img/shopping_cart.svg" alt="cart">
+                            <span>Move to cart</span>
+                        </button>
+                        <button class="later-btn-remove">
+                            <span>remove</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="later-card">
@@ -237,10 +271,32 @@
                 <div class="later-card-txt">
                     <h5>$99.50</h5>
                     <p>GoPro HERO6 4K Action Camera - Black</p>
-                    <button class="later-btn">
-                        <img src="./assets/img/shopping_cart.svg" alt="cart">
-                        <span>Move to cart</span>
-                    </button>
+                    <div class="later-for-mob">
+                        <button class="later-btn">
+                            <img src="./assets/img/shopping_cart.svg" alt="cart">
+                            <span>Move to cart</span>
+                        </button>
+                        <button class="later-btn-remove">
+                            <span>remove</span>
+                        </button>
+                    </div>
+                </div>
+            </div><div class="later-card">
+                <div class="later-card-img">
+                    <img src="./assets/img/mob.png" alt="mob">
+                </div>
+                <div class="later-card-txt">
+                    <h5>$99.50</h5>
+                    <p>GoPro HERO6 4K Action Camera - Black</p>
+                    <div class="later-for-mob">
+                        <button class="later-btn">
+                            <img src="./assets/img/shopping_cart.svg" alt="cart">
+                            <span>Move to cart</span>
+                        </button>
+                        <button class="later-btn-remove">
+                            <span>remove</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="later-card">
@@ -250,23 +306,15 @@
                 <div class="later-card-txt">
                     <h5>$99.50</h5>
                     <p>GoPro HERO6 4K Action Camera - Black</p>
-                    <button class="later-btn">
-                        <img src="./assets/img/shopping_cart.svg" alt="cart">
-                        <span>Move to cart</span>
-                    </button>
-                </div>
-            </div>
-            <div class="later-card">
-                <div class="later-card-img">
-                    <img src="./assets/img/mob.png" alt="mob">
-                </div>
-                <div class="later-card-txt">
-                    <h5>$99.50</h5>
-                    <p>GoPro HERO6 4K Action Camera - Black</p>
-                    <button class="later-btn">
-                        <img src="./assets/img/shopping_cart.svg" alt="cart">
-                        <span>Move to cart</span>
-                    </button>
+                    <div class="later-for-mob">
+                        <button class="later-btn">
+                            <img src="./assets/img/shopping_cart.svg" alt="cart">
+                            <span>Move to cart</span>
+                        </button>
+                        <button class="later-btn-remove">
+                            <span>remove</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
