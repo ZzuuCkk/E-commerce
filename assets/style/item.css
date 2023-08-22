@@ -453,10 +453,8 @@
     border-top: 1px solid var(--gray-300, #DEE2E7);
     background: var(--gray-200, #EFF2F4);
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     align-items: center;
-    padding-left: 128px;
-    gap: 749px;
   }
   
   
@@ -513,7 +511,8 @@
     /* box-shadow: 0 0 1px 1px #E0E0E0; */
   }
   .chart{
-    width: 1340px;
+    width: 13
+    40px;
     margin: auto;
     padding: 20px;
     display: flex;
